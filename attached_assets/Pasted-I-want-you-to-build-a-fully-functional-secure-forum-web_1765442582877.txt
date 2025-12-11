@@ -1,0 +1,157 @@
+I want you to build a fully functional, secure forum web application.
+This forum is for an online community Algerians who are of Amazigh origins and is called "Arraw Tllelli" the app must be in French and contains multiple discussion areas for:
+
+General Discussion
+
+Politics (this category is extremely important)
+
+History
+
+Off-Topic
+
+Religion & Spirituality
+
+Books & Literature
+
+Technology
+
+Memes
+
+Music
+
+
+
+Private Invite-Only Section (only accessible after manual approval)
+
+SECURITY REQUIREMENTS
+
+This forum is meant to protect a vulnerable community, so security is top priority. Implement:
+
+Password hashing with bcrypt
+
+Email + password login system
+
+Session-based authentication (no Firebase, no 3rd party provider auth)
+
+Role system:
+
+admin
+
+moderator
+
+member
+
+new user (restricted)
+
+Moderation tools for admins & mods
+
+Anti-spam & rate limiting
+
+Input sanitization
+
+CSRF protection
+
+SQL injection protection via parameterized queries
+
+Store no unnecessary data
+
+Allow TOR users
+
+TECH STACK (IMPORTANT — SQL ONLY)
+
+Use this stack:
+
+Backend: Node.js + Express
+
+Frontend: HTML, CSS, JS (or React if needed)
+
+Database: MySQL or MariaDB (generate a .sql file!)
+
+ORM: Knex.js OR raw prepared statements (your choice)
+
+Sessions: Express-session + MySQL session store
+
+Password hashing: bcrypt
+
+Hosting flexibility: Must run on ANY provider (local or remote)
+
+DATABASE REQUIREMENT
+
+Generate a database.sql file that I can download, containing:
+
+users table
+
+roles table
+
+forums table
+
+categories table
+
+threads table
+
+posts table
+
+private_invites table
+
+moderation_logs table
+
+banned_ips table
+
+sessions table (if using a SQL session store)
+
+Include sample seed data (1 admin, 1 mod, and categories listed above).
+
+INVITE-ONLY SECTION
+
+There must be a private category called Makist that:
+
+Does NOT appear unless the user is approved
+
+Requires manual admin approval
+
+Has a separate table for invite requests
+
+Has different permissions rules
+
+UI REQUIREMENTS
+
+The UI should look similar to cracked.to:
+
+Dark theme
+
+Dense thread listing
+
+Left sidebar with categories
+
+Right sidebar with trending posts & forum stats
+
+Modern, clean, sleek
+
+Mobile responsive
+
+Light animations ok
+
+WHAT YOU MUST GENERATE FOR ME
+
+Full project folder structure
+
+All backend code (Express routes, auth, middleware, security, thread/post logic)
+
+All frontend pages (HTML/CSS/JS or React components)
+
+A fully generated database.sql file
+
+A README.md with:
+
+How to import the SQL file
+
+How to connect environment variables
+
+How to run the server locally
+
+How to deploy it anywhere (Railway, VPS, cPanel, etc.)
+
+Make sure everything is complete and production-ready.
+Make sure the invite-only private section is implemented exactly as described.
+Make sure NO Firebase and NO Google dependencies exist.
+Everything should work with ONLY an SQL database.v
